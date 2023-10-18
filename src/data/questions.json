@@ -1,0 +1,32 @@
+[
+
+    {
+        "id": 1,
+        "statment" :"1.   what is the capital of pakistan",
+        "options" :["Lahore" , "Karachi" , "Islamabad" , "Queeta"],
+        "answer" : "Islamabad"
+    },
+    {
+        "id": 2,
+        "statment" :"2.  what is the capital of France",
+        "options" :["Paris" , "Madrid" , "Berlin" , "Islamabad"],
+        "answer" : "Paris"
+    },
+    {
+        "id": 3,
+        "statment" :"3.  biggest city of pakistan",
+        "options" :["Lahore" , "Karachi" , "Multan" , "KPK"],
+        "answer" : "Karachi"
+    },
+    {
+        "id": 4,
+        "statment" :" 4.  England is the national game of ?",
+        "options" :["China" , "India" , "Pakistan" , "England"],
+        "answer" : "England"
+    }
+    
+    
+    
+    
+    
+    ]
