@@ -45,6 +45,20 @@ function App() {
 const q= allQuestions[qIndex];
 
 
+const Next = qIndex < allQuestions.length - 1;
+const Previous = qIndex > 0;
+
+const goToNextQuestion = () => {
+  if (Next) {
+    setQIndex(qIndex + 1);
+  }
+};
+
+const goToPreviousQuestion = () => {
+  if (Previous) {
+    setQIndex(qIndex - 1);
+  }
+};
 
   return (
     <>
@@ -71,8 +85,13 @@ const q= allQuestions[qIndex];
         
 
 
-<button className="btn btn-warning"  onClick={()=>setQIndex(qIndex+1)}>Next</button>
-<button className="btn btn-primary m-2" onClick={()=>setQIndex(qIndex -1)}>Previous</button>
+          <button className="btn btn-warning" onClick={goToNextQuestion} disabled={!Next}>
+          Next
+        </button>
+        <button className="btn btn-primary m-2" onClick={goToPreviousQuestion} disabled={!Previous}>
+          Previous
+        </button>
+      
 
       </div>
 <hr/>
