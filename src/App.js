@@ -8,13 +8,18 @@ function App() {
   const [allQuestions, setAllQuestions] = useState(questions);
   const [qIndex , setQIndex] = useState(0);
   const [score, setScore] = useState(0);
- 
+
+
+
+  
+
   const selectOption = (qid, op) => {
     const copyQuestions = [...allQuestions];
     const question = copyQuestions.find((q) => q.id === qid);
     question.selectedOption = op;
     setAllQuestions(copyQuestions);
     console.log(allQuestions);
+   
   };
  
     const getOptionStyle = (q, op) => {
@@ -39,10 +44,13 @@ function App() {
   
 const q= allQuestions[qIndex];
 
+
+
   return (
     <>
       <div className="container my-2">
         <h1 className="bg-warning text-center">Quiz App </h1>
+
 
         
           <div className="card my-2" key={q.id}>
